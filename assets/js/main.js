@@ -9,17 +9,21 @@ const maxRecord = 251;
 function loadPokemonItens(offset, limit){
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon) => `
-            <li class="pokemon ${pokemon.type}">
-            <span class="number">#${pokemon.number}</span>
-            <span class="name">${pokemon.name}</span>
-
-            <div class="detail">
-                <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                </ol>
-                <img src="${pokemon.photo}" alt="${pokemon.name}">
-            </div>
-            </li>
+                <button class="pokemonBtn">
+                    <li class="pokemon ${pokemon.type}">
+                    <span class="number">#${pokemon.number}</span>
+                    <span class="name">${pokemon.name}</span>
+                    <div class="detail">
+                        <ol class="types">
+                            ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                        </ol>
+                        <div class="images">
+                            <img class="image2" src="/../pokeball_icon.png">
+                            <img class="image1" src="${pokemon.photo}" alt="${pokemon.name}">
+                        </div>
+                    </div>
+                    </li>
+                </button>
         `).join('')
         pokemonList.innerHTML += newHtml
     })
