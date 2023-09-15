@@ -1,0 +1,120 @@
+.modal{
+    /*border: 1px solid black;*/
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    max-width: 365px;
+    align-items: center;
+    margin: auto;
+    color: black;
+    height: 500px;
+    z-index: 2;
+}
+
+/*.hidden {
+    display: none;
+}  */
+
+.flex{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.modal .pokemon .grass{
+    display: flex;
+}
+
+.modalDados span{
+    display: flex;
+    flex-direction: column;
+    min-width: 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.modalDados .number{
+    align-items: end;
+}
+
+.modalDados .name{
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.modalPokemongrass{
+    background: rgb(72,120,49);
+    background: linear-gradient(308deg, rgba(72,120,49,1) 0%, rgba(91,153,61,1) 35%, rgba(119,200,80,1) 100%);
+    padding-left: 4rem;
+    padding-right: 4rem;  
+    border-radius: 5%;
+    z-index: 1;
+}
+
+.imageModal{
+    padding-bottom: 20px;
+}
+
+.spanAbout{
+    color: black; 
+    background: white;
+    width: 358px;
+    height: 50px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 10px;
+    z-index: 1;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    width: 358px;
+    height: 360px;
+    padding: 0;
+    margin-top: 1.5rem;
+    margin: 0;
+    z-index: 1;
+    background: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.about .height{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 290px;
+}
+
+.about .weight{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 290px;
+}
+
+.about .abilites{
+    justify-content: flex-start;
+    width: 290px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 0;  /* 0 por que sim sei la mano ja to cansado*/
+  }
+
+  
