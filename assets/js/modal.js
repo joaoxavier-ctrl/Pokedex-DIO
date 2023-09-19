@@ -1,6 +1,6 @@
 
 //const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
-const pokemonList = document.getElementById('pokemonList')
+/*const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 const limit = 20;
 let offset = 0;
@@ -31,6 +31,8 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
+
+
 //fetch funciona de modo similar a try-catch-finally
 /*pokeApi.getPokemons().then((pokemons) => {
     const listItems = [];
@@ -43,6 +45,15 @@ loadMoreButton.addEventListener('click', () => {
     }
     pokemonList.innerHTML += convertPokemonToLi(pokemon)
 })*/
+
+const openModalButton = document.querySelector(".li.pokemon.grass");
+
+const lista = document.getElementsByClassName(".number");
+lista = parseInt();
+
+openModalButton.array.forEach((x) => {
+    addEventListener("click", x);
+});
 
 
   

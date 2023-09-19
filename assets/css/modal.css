@@ -11,9 +11,9 @@
     z-index: 2;
 }
 
-/*.hidden {
+.hidden {
     display: none;
-}  */
+}  
 
 .flex{
     padding-top: 16px;
